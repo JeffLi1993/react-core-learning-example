@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="hellodiv"></div>
+    <!-- React 的 JSX 语法，跟 JavaScript 不兼容。
+         使用 JSX ，都要加上 type="text/babel" 。 -->
+    <script type="text/babel">
+      ReactDOM.render(
+        <h1>Hello, World!</h1>,
+        document.getElementById('hellodiv')
+      );
+    </script>
+  </body>
+</html>
